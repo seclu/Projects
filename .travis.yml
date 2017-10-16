@@ -1,0 +1,16 @@
+language: go
+
+go:
+  - 1.9
+  - tip
+
+matrix:
+  allow_failures:
+    - go: tip
+  fast_finish: true
+
+notifications:
+  email: false
+
+script:
+  make test
