@@ -1,4 +1,4 @@
-package main
+package numbers
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func main() {
+func FindEToTheNthDigit() {
 	var n int
 	var decimalsCap int = 200
 

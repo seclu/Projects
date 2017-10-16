@@ -1,10 +1,10 @@
-package main
+package numbers
 
 import (
 	"fmt"
 )
 
-func main() {
+func FindPiToTheNthDigit() {
 	var n int
 
 	fmt.Println("Compute π to how many decimal places? (≤200) ")

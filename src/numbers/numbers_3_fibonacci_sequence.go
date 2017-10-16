@@ -1,8 +1,8 @@
-package main
+package numbers
 
 import "fmt"
 
-func main() {
+func Fibonacci() {
 	var n int
 
 	fmt.Println("Generate the Fibonacci sequence to requested number:")
