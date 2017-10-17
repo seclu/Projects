@@ -21,6 +21,8 @@ func main()  {
 			numbers.Fibonacci()
 		case "4":
 			numbers.PrimeFactorization()
+		case "5":
+			numbers.NextPrimeNumber()
 		default:
 			fmt.Println("Choose one program.")
 	}
