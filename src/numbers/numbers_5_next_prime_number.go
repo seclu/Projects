@@ -26,7 +26,7 @@ func NextPrimeNumber(args ...float64) {
 		for {
 			n++
 			
-			if (isPrime(n)) {
+			if isPrime(n) {
 				fmt.Println(n)
 				break
 			}
