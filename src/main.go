@@ -2,14 +2,18 @@ package main
 
 import (
 	"./numbers"
+	"./data_structures"
 	"os"
 	"fmt"
+	"io/ioutil"
 )
 
 func main()  {
-	var program string
+	var program, path, query string
 	if len(os.Args) > 1 {
 		program = os.Args[1]
+		path = os.Args[2]
+		query = os.Args[3]
 	}
 
 	switch program {
@@ -23,6 +27,15 @@ func main()  {
 			numbers.PrimeFactorization()
 		case "5":
 			numbers.NextPrimeNumber()
+		case "6":
+			data, err := ioutil.ReadFile(path)
+			if err != nil {
+				panic(err)
+			}
+
+			s := data_structures.Search{Text: string(data)}
+			result := s.Search(query)
+			fmt.Println(result)
 		default:
 			fmt.Println("Choose one program.")
 	}
